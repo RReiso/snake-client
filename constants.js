@@ -4,8 +4,8 @@ const EXIT_KEY = '\u0003'; // ctrl + C
 const NAME = 'RR';
 const UP_KEY = '\u0077'; // w
 const DOWN_KEY = '\u0073'; // s
-const RIGHT_KEY = '\u0074'; // a
-const LEFT_KEY = '\u0061'; // d
+const RIGHT_KEY = '\u0064'; // d
+const LEFT_KEY = '\u0061'; // a
 
 module.exports = {
   IP,
