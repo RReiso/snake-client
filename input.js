@@ -1,3 +1,4 @@
+const { EXIT_KEY, UP_KEY, DOWN_KEY, LEFT_KEY, RIGHT_KEY } = require("./constants");
 let connection;
 
 const setupInput = function(conn) {
@@ -11,20 +12,20 @@ const setupInput = function(conn) {
 };
 
 const handleUserInput = function(key) {
-  if (key === '\u0003') {
+  if (key === EXIT_KEY) {
     process.exit();
   }
   switch (key) {
-  case '\u0077':
+  case UP_KEY:
     connection.write("Move: up");
     break;
-  case '\u0073':
+  case DOWN_KEY:
     connection.write("Move: down");
     break;
-  case '\u0064':
+  case RIGHT_KEY:
     connection.write("Move: right");
     break;
-  case '\u0061':
+  case LEFT_KEY:
     connection.write("Move: left");
     break;
   case '\u0071':
