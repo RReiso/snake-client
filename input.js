@@ -27,6 +27,12 @@ const handleUserInput = function(key) {
   case '\u0061':
     connection.write("Move: left");
     break;
+  case '\u0071':
+    connection.write("Say: (>'-')>");
+    break;
+  case '\u0065':
+    connection.write("Say: [‘ᴥ’]");
+    break;
   }
 };
 
