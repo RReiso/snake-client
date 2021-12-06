@@ -3,6 +3,7 @@ let connection;
 
 const setupInput = function(conn) {
   connection = conn;
+  // read from comman dline
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
@@ -11,6 +12,7 @@ const setupInput = function(conn) {
   return stdin;
 };
 
+//send data to server after receiving command line input
 const handleUserInput = function(key) {
   if (key === EXIT_KEY) {
     process.exit();
